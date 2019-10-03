@@ -69,9 +69,9 @@ describe('personMaker', () => {
     })
     it('does not throw error if passed more than 2 arguments', () => {
       expect(helpers.personMaker('peter', 4, 'goodbye')).toMatchObject({
-        id: 123,
+        id: '123',
         name: 'peter',
-        age: 'five',
+        age: 4,
       });
     })
 });
